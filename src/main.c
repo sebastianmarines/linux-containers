@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/wait.h>
+#include <sys/mount.h>
 #include <errno.h>
 
 int child();
@@ -28,6 +29,7 @@ int child()
     sethostname("container", 9);
     chroot("ubuntu");
     chdir("/");
+    mount("proc", "proc", "proc", 0, "");
     execv("/bin/bash", cmd);
     return 0;
 }
