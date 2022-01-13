@@ -10,7 +10,7 @@ int child();
 
 int main()
 {
-    int clone_flags = CLONE_NEWUTS | CLONE_NEWPID | CLONE_NEWNS | CLONE_NEWNET | CLONE_NEWIPC;
+    int clone_flags = CLONE_NEWUTS | CLONE_NEWPID | CLONE_NEWNS | CLONE_NEWNET | CLONE_NEWIPC | CLONE_NEWUSER;
     pid_t container = clone(child, malloc(4096) + 4096, SIGCHLD | clone_flags, NULL);
     if (container == -1)
     {
