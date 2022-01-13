@@ -24,10 +24,10 @@ int main()
 
 int child()
 {
-    char *cmd[] = {"/bin/sh", NULL};
+    char *cmd[] = {"/bin/bash", NULL};
     sethostname("container", 9);
-    chroot("alpine");
+    chroot("ubuntu");
     chdir("/");
-    execv("/bin/sh", cmd);
+    execv("/bin/bash", cmd);
     return 0;
 }
