@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <sys/wait.h>
 #include <sys/mount.h>
-#include <errno.h>
 
 int child();
 
