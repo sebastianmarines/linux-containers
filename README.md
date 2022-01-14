@@ -4,10 +4,9 @@ Download Ubuntu image `$ docker export $(docker create ubuntu) | tar -C ubuntu -
 
 ## Namespaces
 
+https://lwn.net/Articles/531114/
+
 ### CLONE_NEWUTS (Domain and hostname)
-
-
-
 
 ### CLONE_NEWPID (Processes)
 
@@ -23,5 +22,6 @@ Download Ubuntu image `$ docker export $(docker create ubuntu) | tar -C ubuntu -
 
 ### CLONE_NEWUSER (User namespace)
 
+https://lwn.net/Articles/532593/
 
 ### CLONE_NEWCGROUP (Cgroup namespace)
