@@ -1,6 +1,6 @@
 OBJS	=
 SOURCE	= src/main.c
-OUT	= main
+OUT	= container
 CC	 = gcc
 FLAGS	 =
 LFLAGS	 =

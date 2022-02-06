@@ -43,6 +43,6 @@ int child(void *arg)
     chroot("ubuntu");
     chdir("/");
     mount("proc", "proc", "proc", 0, "");
-    execv(argv[0], &argv[0]);
+    execv(argv[0], argv);
     return 0;
 }
